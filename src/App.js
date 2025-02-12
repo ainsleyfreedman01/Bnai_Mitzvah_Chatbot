@@ -1,5 +1,4 @@
 import react from "react";
-import logo from "./logo.svg";
 import Chatbot from "./Chatbot";
 
 function App() {
