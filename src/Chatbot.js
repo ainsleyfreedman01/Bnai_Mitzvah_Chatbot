@@ -103,7 +103,7 @@ function Chatbot() {
         } else if (yesOrNo) {
             botResponse = restartOrEnd(userMessage);
             setYesOrNo(false);
-        } else if (userMessage.toLowerCase().includes("stuck") || userMessage.toLowerCase.includes("don't understand")) {
+        } else if (userMessage.toLowerCase().includes("stuck") || userMessage.toLowerCase().includes("don't understand")) {
             botResponse = "I'm sorry you're having trouble. Would you like to take a break and come back to this? Or perhaps you'd like to try asking your rabbi, or someone else you feel could provide additional help? You can type the word 'restart' when you'd like to come back and start fresh."
         } else if (userMessage.toLowerCase().includes("hate") || userMessage.toLowerCase().includes("suck") || userMessage.toLowerCase().includes("don't understand") || userMessage.toLowerCase().includes("confused")) {
             botResponse = "I'm sorry you're feeling that way. Would you like to take a break and come back to this? You can type the word 'restart' when you'd like to come back and start fresh."
