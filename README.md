@@ -1,7 +1,7 @@
 # b'nAI Mitzvah Chatbot
 
 ## Overview  
-The **B'nAI Mitzvah Chatbot** is an interactive, rule-based chatbot designed to assist students in learning prayers for their B’nai Mitzvah. It provides predefined interpretations, allows students to ask questions, and reacts their insights to create an engaging and fun learning experience.
+The **B'nAI Mitzvah Chatbot** is an interactive, rule-based chatbot designed to assist students in learning prayers for their B’nai Mitzvah. It provides predefined interpretations, allows students to ask questions, and reacts to their insights to create an engaging and fun learning experience.
 
 ## Features  
 - **Text-Based Interaction** – Students can ask about specific prayers and receive structured interpretations.  
