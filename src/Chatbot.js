@@ -157,7 +157,6 @@ function Chatbot() {
             • Adonai S'fatai
             • Avot v'Imahot
             • G'vurot
-            • K'dushah
             • Aleinu
             • Mourner's Kaddish
             • Chatzi Kaddish
