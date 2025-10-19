@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Chatbot.css';
 
 const generalPrayers = {
@@ -339,6 +339,60 @@ function Chatbot() {
             thoughtResponse = "Beautiful! The Blessing Before the Torah is a moment of gratitude for the Torah, our source of wisdom and light!";
         } else if (prayer === "after" && userMessage.toLowerCase().includes("after")) {
             thoughtResponse = "Well done! The Blessing After the Torah reflects our thanks for the wisdom it brings. Keep thinking deeply!";
+        } else if ((prayer === "bar'chu" || prayer === "bar'chu" || prayer === "bar'chu") && userMessage.toLowerCase().includes("ready")) {
+            thoughtResponse = "Perfect insight! The Bar'chu is all about asking ourselves if we're ready to pray. You're really tuning into the deeper meaning here!";
+        } else if ((prayer === "sh'ma" || prayer === "sh'ma" || prayer === "sh'ma") && userMessage.toLowerCase().includes("one")) {
+            thoughtResponse = "Yes! The declaration that 'Adonai is One' (Adonai Echad) is the heart of the Sh'ma. You've captured the essence of this prayer beautifully!";
+        } else if ((prayer === "v'ahavta" || prayer === "v'ahavta" || prayer === "v'ahavta") && userMessage.toLowerCase().includes("mezuzah")) {
+            thoughtResponse = "Awesome connection! The V'ahavta is why we have mezuzahs on our doorposts. You're linking the prayer to real-life practice—that's fantastic!";
+        } else if ((prayer === "v'ahavta" || prayer === "v'ahavta" || prayer === "v'ahavta") && userMessage.toLowerCase().includes("heart")) {
+            thoughtResponse = "Beautiful! Loving God with all your heart is such a powerful part of this prayer. You're really connecting with the emotional depth here!";
+        } else if (prayer === "mi chamocha" && userMessage.toLowerCase().includes("praise")) {
+            thoughtResponse = "Exactly! This prayer is all about praising God for the miraculous things He does. You're getting it!";
+        } else if (prayer === "mi chamocha" && (userMessage.toLowerCase().includes("sea") || userMessage.toLowerCase().includes("red sea"))) {
+            thoughtResponse = "Yes! The Mi Chamocha celebrates that incredible moment at the Red Sea. What a powerful image to remember!";
+        } else if ((prayer === "avot v'imahot" || prayer === "avot" || prayer === "avot v'imahot" || prayer === "avot v'imahot") && (userMessage.toLowerCase().includes("mothers") || userMessage.toLowerCase().includes("fathers"))) {
+            thoughtResponse = "Great observation! Recognizing both our fathers and mothers—Abraham, Isaac, Jacob, Sarah, Rebecca, Rachel, and Leah—makes this prayer so inclusive and meaningful!";
+        } else if ((prayer === "g'vurot" || prayer === "g'vurot" || prayer === "g'vurot") && (userMessage.toLowerCase().includes("heal") || userMessage.toLowerCase().includes("healing"))) {
+            thoughtResponse = "Perfect! G'vurot celebrates God's power to heal the sick. It's a reminder that true strength includes compassion and care. Beautiful insight!";
+        } else if ((prayer === "g'vurot" || prayer === "g'vurot" || prayer === "g'vurot") && userMessage.toLowerCase().includes("rain")) {
+            thoughtResponse = "Nice catch! The mention of rain in G'vurot reminds us that God provides for our physical needs too. You're paying great attention to detail!";
+        } else if ((prayer === "mourner's kaddish" || prayer === "mourner's kaddish" || prayer === "mourner's kaddish") && userMessage.toLowerCase().includes("memory")) {
+            thoughtResponse = "Such a thoughtful reflection! Reciting the Kaddish in memory of loved ones is a beautiful way to honor them. You understand the heart of this prayer!";
+        } else if (prayer === "aleinu" && (userMessage.toLowerCase().includes("end") || userMessage.toLowerCase().includes("conclusion"))) {
+            thoughtResponse = "Yes! The Aleinu comes at the end of services, wrapping things up with a powerful message. It's like the grand finale!";
+        } else if (prayer === "chatzi kaddish" && userMessage.toLowerCase().includes("transition")) {
+            thoughtResponse = "Great thinking! The Chatzi Kaddish helps transition between different parts of the service. You're really understanding the structure!";
+        } else if (prayer === "mi shebeirach" && (userMessage.toLowerCase().includes("healing") || userMessage.toLowerCase().includes("sick"))) {
+            thoughtResponse = "Exactly! The Mi Shebeirach is our prayer for those who need healing and strength. Such a compassionate prayer to reflect on!";
+        } else if (prayer === "modeh ani" && (userMessage.toLowerCase().includes("wake") || userMessage.toLowerCase().includes("morning") || userMessage.toLowerCase().includes("first"))) {
+            thoughtResponse = "Perfect! The Modeh Ani is the very first thing we say when we wake up—starting the day with gratitude. What a beautiful practice!";
+        } else if (prayer === "ahavah rabbah" && (userMessage.toLowerCase().includes("love") || userMessage.toLowerCase().includes("torah"))) {
+            thoughtResponse = "Yes! This prayer beautifully connects God's love for us with the gift of Torah. You're making wonderful connections!";
+        } else if ((prayer === "k'dushah" || prayer === "k'dushah" || prayer === "k'dushah") && userMessage.toLowerCase().includes("kadosh")) {
+            thoughtResponse = "Excellent! 'Kadosh' means 'holy,' and saying it three times in the K'dushah really emphasizes God's holiness. You're diving into the Hebrew beautifully!";
+        } else if ((prayer === "k'dushah" || prayer === "k'dushah" || prayer === "k'dushah") && userMessage.toLowerCase().includes("stand")) {
+            thoughtResponse = "Great observation! The K'dushah is part of the Amidah, which we say while standing. You're noticing the important details!";
+        } else if (prayer === "daily miracles" && (userMessage.toLowerCase().includes("everyday") || userMessage.toLowerCase().includes("small"))) {
+            thoughtResponse = "Beautiful insight! The Daily Miracles prayer helps us appreciate the small, everyday blessings we often take for granted. Keep cultivating that awareness!";
+        } else if (prayer === "ahavat olam" && userMessage.toLowerCase().includes("children")) {
+            thoughtResponse = "Wonderful connection! The Ahavat Olam reminds us to teach our children about God's ways. Passing down tradition is so important!";
+        } else if (prayer === "hashkiveinu" && (userMessage.toLowerCase().includes("protection") || userMessage.toLowerCase().includes("safe") || userMessage.toLowerCase().includes("sleep"))) {
+            thoughtResponse = "Perfect! The Hashkiveinu asks God to keep us safe while we sleep. It's like a spiritual goodnight prayer!";
+        } else if ((prayer === "maariv aravim" || prayer === "maariv") && (userMessage.toLowerCase().includes("night") || userMessage.toLowerCase().includes("darkness"))) {
+            thoughtResponse = "Yes! The Maariv Aravim acknowledges God's role in bringing the evening and night. You're really connecting with the rhythm of the day!";
+        } else if (prayer === "kiddush" && (userMessage.toLowerCase().includes("creation") || userMessage.toLowerCase().includes("rest") || userMessage.toLowerCase().includes("seventh"))) {
+            thoughtResponse = "Excellent! The Kiddush celebrates God's creation and rest on the seventh day. You're understanding the deeper meaning of Shabbat!";
+        } else if ((prayer === "l'cha dodi" || prayer === "l'cha dodi" || prayer === "l'cha dodi") && (userMessage.toLowerCase().includes("bride") || userMessage.toLowerCase().includes("queen"))) {
+            thoughtResponse = "Beautiful! The image of the Sabbath Bride or Queen makes Shabbat feel like a special guest we're welcoming. Love that you picked up on this poetic element!";
+        } else if ((prayer === "candle" || prayer === "candles") && (userMessage.toLowerCase().includes("commandment") || userMessage.toLowerCase().includes("mitzvah"))) {
+            thoughtResponse = "Exactly! Lighting the Shabbat candles is one of the commandments (mitzvot) that makes Shabbat special. You're making great connections!";
+        } else if (prayer === "hamotzi" && userMessage.toLowerCase().includes("earth")) {
+            thoughtResponse = "Nice! The Hamotzi thanks God 'who brings forth bread from the earth.' You're paying attention to the beautiful imagery in the prayer!";
+        } else if (prayer === "before" && (userMessage.toLowerCase().includes("chosen") || userMessage.toLowerCase().includes("guidebook"))) {
+            thoughtResponse = "Perfect insight! The Torah is indeed our ultimate guidebook, and this blessing acknowledges that special gift. Well done!";
+        } else if (prayer === "after" && (userMessage.toLowerCase().includes("truth") || userMessage.toLowerCase().includes("everlasting"))) {
+            thoughtResponse = "Excellent! The blessing speaks of 'Torah of truth' and 'everlasting life'—such powerful concepts. You're really engaging with the depth here!";
         } else {
             thoughtResponse = "Thank you for sharing your thoughts! I really appreciate hearing your insights!";
         }
