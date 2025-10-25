@@ -392,9 +392,46 @@ function Chatbot() {
             thoughtResponse = "Perfect insight! The Torah is indeed our ultimate guidebook, and this blessing acknowledges that special gift. Well done!";
         } else if (prayer === "after" && (userMessage.toLowerCase().includes("truth") || userMessage.toLowerCase().includes("everlasting"))) {
             thoughtResponse = "Excellent! The blessing speaks of 'Torah of truth' and 'everlasting life'—such powerful concepts. You're really engaging with the depth here!";
-        } else {
+        }
+
+        // Additional general reactions (more coverage)
+        else if (userMessage.toLowerCase().includes("nice") || userMessage.toLowerCase().includes("lovely") || userMessage.toLowerCase().includes("pretty")) {
+            thoughtResponse = "I'm glad you think so — it's wonderful when a prayer lands with someone. Noticing what's 'nice' about it shows real sensitivity to meaning and feeling!";
+        } else if (userMessage.toLowerCase().includes("favorite") || userMessage.toLowerCase().includes("my favorite") || userMessage.toLowerCase().includes("fav")) {
+            thoughtResponse = "That's lovely — having a favorite prayer makes it personal and memorable. What about it speaks to you most?";
+        } else if (userMessage.toLowerCase().includes("calm") || userMessage.toLowerCase().includes("calming") || userMessage.toLowerCase().includes("soothing") || userMessage.toLowerCase().includes("comforting") || userMessage.toLowerCase().includes("peaceful")) {
+            thoughtResponse = "I love that you find it calming — many people use prayer as a way to center themselves. It's a beautiful personal response and very meaningful!";
+        } else if (userMessage.toLowerCase().includes("inspiring") || userMessage.toLowerCase().includes("inspire") || userMessage.toLowerCase().includes("uplifting") || userMessage.toLowerCase().includes("uplift") || userMessage.toLowerCase().includes("powerful")) {
+            thoughtResponse = "Yes — prayers can be really inspiring and give us new energy or perspective. I'm glad this one lifts you up!";
+        } else if (userMessage.toLowerCase().includes("melody") || userMessage.toLowerCase().includes("tune") || userMessage.toLowerCase().includes("chant")) {
+            thoughtResponse = "The melody can make a prayer feel extra special — it helps the words stick and the feeling deepen. Which part of the tune do you like?";
+        } else if (userMessage.toLowerCase().includes("nostalgic") || userMessage.toLowerCase().includes("reminds me of") || userMessage.toLowerCase().includes("remind")) {
+            thoughtResponse = "Such a meaningful reaction — when a prayer brings memories or connections to mind, it becomes part of your story. Thanks for sharing that memory!";
+        } else if (userMessage.toLowerCase().includes("community") || userMessage.toLowerCase().includes("together") || userMessage.toLowerCase().includes("family") || userMessage.toLowerCase().includes("friends")) {
+            thoughtResponse = "Prayers often connect us to community and the people we love. It's wonderful that it makes you think of those relationships.";
+        } else if (userMessage.toLowerCase().includes("comfort") || userMessage.toLowerCase().includes("helps me") || userMessage.toLowerCase().includes("gets me through") || userMessage.toLowerCase().includes("helps")) {
+            thoughtResponse = "I'm glad it brings comfort — many people find strength in these words during tough times. That's a really important role for prayer to play.";
+        }
+
+        // More prayer-specific small touches
+        else if ((prayer === "sh'ma" || prayer === "sh’ma" || prayer === "sh‘ma") && (userMessage.toLowerCase().includes("faith") || userMessage.toLowerCase().includes("belief"))) {
+            thoughtResponse = "Absolutely — the Sh'ma is often called the declaration of faith; it's central to Jewish belief and identity. You're touching on something core!";
+        } else if ((prayer === "mourner's kaddish" || prayer === "mourner’s kaddish" || prayer === "mourner‘s kaddish") && (userMessage.toLowerCase().includes("honor") || userMessage.toLowerCase().includes("remember") || userMessage.toLowerCase().includes("memory"))) {
+            thoughtResponse = "Yes — saying Kaddish in memory of someone is a loving way to honor them. It keeps their memory alive in community.";
+        } else if ((prayer === "kiddush") && (userMessage.toLowerCase().includes("cheers") || userMessage.toLowerCase().includes("drink") || userMessage.toLowerCase().includes("wine"))) {
+            thoughtResponse = "Cheers! The Kiddush sanctifies the Shabbat over a cup of wine (or grape juice) — a small ritual that signals celebration and rest.";
+        } else if (prayer === "hamotzi" && (userMessage.toLowerCase().includes("bless") || userMessage.toLowerCase().includes("food") || userMessage.toLowerCase().includes("grateful"))) {
+            thoughtResponse = "Exactly — the Hamotzi is about blessing the bread and recognizing the sustenance we receive. Gratitude for food is a lovely thing to notice!";
+        } else if ((prayer === "l'cha dodi" || prayer === "l’cha dodi" || prayer === "l‘cha dodi") && (userMessage.toLowerCase().includes("sing") || userMessage.toLowerCase().includes("dance") || userMessage.toLowerCase().includes("invite"))) {
+            thoughtResponse = "L'cha Dodi has such warm, inviting language — it's practically designed to be sung. Glad you picked up on that joyful spirit!";
+        } else if ((prayer === "k'dushah" || prayer === "k’dushah" || prayer === "k‘dushah") && userMessage.toLowerCase().includes("holy")) {
+            thoughtResponse = "Saying 'Kadosh' (holy) three times is powerful — it creates a moment of awe. Nice attention to the Hebrew and its impact!";
+        }
+
+        else {
             thoughtResponse = "Thank you for sharing your thoughts! I really appreciate hearing your insights!";
         }
+
         thoughtResponse += "\nWould you like to try another prayer?";
         return thoughtResponse;
     };    
