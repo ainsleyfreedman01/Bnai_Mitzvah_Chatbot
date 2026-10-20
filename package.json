@@ -33,6 +33,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.3",
     "gh-pages": "^6.3.0"
   },
   "homepage": "https://ainsleyfreedman01.github.io/Bnai_Mitzvah_Chatbot/"

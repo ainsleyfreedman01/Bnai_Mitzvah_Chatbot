@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Preview prayer study",
+			"type": "shell",
+			"command": "BROWSER=none PORT=3017 npm start",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
