@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Bnai_Mitzvah_Chatbot/static/css/main.4688cb59.css",
-    "main.js": "/Bnai_Mitzvah_Chatbot/static/js/main.7e24b2a7.js",
+    "main.css": "/Bnai_Mitzvah_Chatbot/static/css/main.f920ce5b.css",
+    "main.js": "/Bnai_Mitzvah_Chatbot/static/js/main.db778f64.js",
     "index.html": "/Bnai_Mitzvah_Chatbot/index.html",
-    "main.4688cb59.css.map": "/Bnai_Mitzvah_Chatbot/static/css/main.4688cb59.css.map",
-    "main.7e24b2a7.js.map": "/Bnai_Mitzvah_Chatbot/static/js/main.7e24b2a7.js.map"
+    "main.f920ce5b.css.map": "/Bnai_Mitzvah_Chatbot/static/css/main.f920ce5b.css.map",
+    "main.db778f64.js.map": "/Bnai_Mitzvah_Chatbot/static/js/main.db778f64.js.map"
   },
   "entrypoints": [
-    "static/css/main.4688cb59.css",
-    "static/js/main.7e24b2a7.js"
+    "static/css/main.f920ce5b.css",
+    "static/js/main.db778f64.js"
   ]
 }
